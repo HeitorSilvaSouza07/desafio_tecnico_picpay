@@ -5,6 +5,6 @@ from app.schema.UserSchema import UserCreateSchema
 router = APIRouter(prefix="/users", tags=["Users"])
 
 @staticmethod
-@router.post("/", response_model=UserCreateSchema)
+@router.post("/", response_model=UserCreateSchema, details="Create a new user")
 def create_user(data: UserCreateSchema):
     return UserController.create_user(data)
