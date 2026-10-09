@@ -1,4 +1,4 @@
-class GlobalHander:
+class GlobalHandler:
 
     @staticmethod
     def handle_global_exception():
